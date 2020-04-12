@@ -1,7 +1,27 @@
+.main {
+  display: block;
+  height: calc(100vh - 119px);
+
+  h1, h2,h3,h4,h5 {
+    font-family: Roboto !important;
+    font-weight: 100 !important;
+  }
+}
 .logo {
-  height: 40vmin;
+  float: right;
+  margin: 0 0 1em;
+  height: 5vmin;
   pointer-events: none;
 }
+
+
+/* Footer */
+.footer {
+  background: #9B479F;
+  color: #fff;
+  font-size: .9rem;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .logo {
