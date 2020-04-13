@@ -18,8 +18,19 @@ function App() {
             <p>I'm intending to build this 'app' in reactjs &amp; bootstrap / font-awesome.</p>
             </div>
           </div>
-        </div>
-      </div>      
+        </div>        
+      </div>
+      <div className="wrapper">
+        <div className="item">r1c1</div>
+        <div className="item">r1c2</div>
+        <div className="item">r1c3</div>
+        <div className="item">r2c1</div>
+        <div className="item">r2c2</div>
+        <div className="item">r2c3</div>
+        <div className="item">r3c1</div>
+        <div className="item">r3c2</div>
+        <div className="item">r3c3</div>
+      </div>    
       <Footer />
     </>
   );

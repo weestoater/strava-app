@@ -1,6 +1,6 @@
 .main {
   display: block;
-  height: calc(100vh - 119px);
+  height: calc(50vh - 119px);
 
   h1, h2,h3,h4,h5 {
     font-family: Roboto !important;
@@ -14,14 +14,37 @@
   pointer-events: none;
 }
 
-
 /* Footer */
 .footer {
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
   background: #9B479F;
   color: #fff;
   font-size: .9rem;
 }
 
+@supports (display: grid) {
+   .wrapper {
+       display: grid;
+       margin: 15px;
+       grid-template-columns: repeat(3, 1fr);
+       grid-template-rows: repeat(3, 10vh);
+       gap: 15px;
+       
+       .item {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid #ccc;
+        border-radius: 10px;
+        background: #fff;
+       }
+   }
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .logo {
